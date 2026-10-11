@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "SafeOps ID",
+    "slug": "safeops-id",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to verify your PPE at zone entry"
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Used to verify your PPE at zone entry"
+        }
+      ],
+      "expo-status-bar",
+      "expo-audio"
+    ]
+  }
+}
